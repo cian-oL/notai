@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
-import "./globals.css";
+
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "NotAÍ",
@@ -22,8 +23,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
-          <Toaster />
+          <div className="flex min-h-screen w-full flex-col">
+            <main className="flex flex-1 flex-col px-4 pt-10 xl:px-8">
+              {children}
+            </main>
+            <Toaster />
+          </div>
         </ThemeProvider>
       </body>
     </html>
