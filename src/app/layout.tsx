@@ -29,7 +29,7 @@ export default function RootLayout({
             <main className="flex flex-1 flex-col px-4 pt-10 xl:px-8">
               {children}
             </main>
-            <Toaster />
+            <Toaster richColors />
           </div>
         </ThemeProvider>
       </body>
