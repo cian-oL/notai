@@ -1,0 +1,20 @@
+[project]
+name = "notai"
+version = "0.1.0"
+description = "Research & Write Notes"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+exclude-newer = "14 days"
+
+[dependency-groups]
+dev = [
+    "pre-commit~=4.6.0",
+    "ruff~=0.15.12",
+]
