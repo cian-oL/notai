@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Research Agent"
 requires-python = ">=3.14"
 dependencies = [
+    "fastmcp~=3.2.4",
     "pydantic~=2.13.3",
 ]
 
